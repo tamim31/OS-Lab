@@ -1,0 +1,23 @@
+read a
+read b
+
+c=`expr $a + $b`
+echo c
+
+d=`expr $a - $b`
+echo d
+
+e=`expr $a \* $b`
+echo e
+
+read flag
+if [ $flag = 1 ]
+then
+echo c
+elif [ $flag = 2 ]
+then
+echo d
+
+else
+echo e
+fi

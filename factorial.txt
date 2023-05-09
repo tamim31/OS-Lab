@@ -1,0 +1,14 @@
+function fact()
+{
+read n
+b=1
+
+while [ n -ge  1 ]
+do
+b=`expr  $b  \*  $n`
+n=`expr $n - 1`
+done
+
+echo $b
+}
+fact

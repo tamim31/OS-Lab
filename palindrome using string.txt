@@ -1,0 +1,10 @@
+read a
+b=$a
+c=`rev  <<< $a`
+
+if [ $b = $c ]
+then 
+echo palindrome
+else
+echo not palindrome
+fi

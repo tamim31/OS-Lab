@@ -1,0 +1,34 @@
+read a
+read b
+function sum() {
+c=`expr $a + $b`
+echo c
+}
+function sub() {
+d=`expr $a - $b`
+echo d
+}
+function mul() {
+e=`expr $a \* $b`
+echo e
+}
+
+
+function ope()
+{
+read f
+
+if [ $f  =  1  ]
+then 
+sum $a $b
+
+elif [ $f  =  2 ]
+then 
+sub $a $b
+
+else 
+mul $a $b
+fi
+}
+ope
+

@@ -1,0 +1,17 @@
+read a
+read b
+
+c=`expr $a + $b`
+echo c
+
+d=`expr $a - $b`
+echo d
+
+e=`expr $a \* $b`
+echo e
+
+f=`expr $a / $b`
+echo f
+
+g=`expr $a % $b`
+echo g

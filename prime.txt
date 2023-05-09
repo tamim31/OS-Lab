@@ -1,0 +1,40 @@
+read n
+prime=1
+for ((i = 2; i < n ; i++))
+do
+if [ `expr $n % $i` = 0 ]
+then 
+prime=0
+break
+fi
+done
+
+if [ prime = 0 ]
+then 
+echo not prime
+else
+echo prime
+fi
+
+
+
+oR
+read n
+prime=1
+i=2
+while [ $i -lt $n ]
+do
+if [ `expr $n % $i` = 0 ]
+then 
+prime=0
+break
+fi
+i=`expr $i  +1`
+done
+
+if [ prime = 0 ]
+then 
+echo not prime
+else
+echo prime
+fi

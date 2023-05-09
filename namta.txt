@@ -1,0 +1,22 @@
+read p
+n=1
+while [ $n -le 10 ]
+do
+m=`expr $p \* $n`
+n=`expr $n + 1`
+echo $m
+done
+
+OR,,
+1 x 1=1
+1 x 2=2
+1 x 3 =3
+avabe print korte cayle
+read p
+n=1
+while [ $n -le 10 ]
+do
+m=`expr $p \* $n`
+n=`expr $n + 1`
+echo $p x `expr $n - 1 ` =  $m
+done

@@ -1,0 +1,11 @@
+read a
+
+f=`expr $a % 2`
+
+if[ $f = 0 ]
+then 
+echo even
+
+else
+echo odd
+fi

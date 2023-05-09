@@ -1,0 +1,9 @@
+read a
+
+if [ $a -ge 18]
+then
+echo voter
+
+else
+echo na
+fi
